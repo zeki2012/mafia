@@ -1,17 +1,19 @@
-let ad = prompt('Adinizi daxil edin:');
-let math = Math.floor(Math.random() * 3);
-let netice;
+let ad = prompt('Adinizi qeyd edin')
+function zeki() {
+    let kart = Math.floor(Math.random() * 3); 
+    let result;
 
+    switch (kart) {
+        case 1:
+            result = `${ad} Komisarsiniz. Vezifeniz mafyanı tapmaq öldürmək`;
+            break;
+        case 2:
+            result = `${ad} Mafyasiniz. Vezifəniz insanları öldürmək`;
+            break;
+        default:
+            result = `${ad} Vetendassiniz.Vezifeniz mafyanı tapmaq səs vermək`;
+            break;
+    }
 
-
-if (math == 0) {
-    netice = `${ad}, sen Mafiayasan`;
-} else if (math == 1) {
-    netice = `${ad}, sen Kommisarsan`;
-} else if (math == 2) {
-    netice = `${ad}, sen Vetendassan`;
-} else {
-    netice = 'Sehv bas verdi tekrar cehd edin';
-};
-
-document.getElementById('mafia').innerHTML = netice
+    document.getElementById("mafya").innerHTML = result;
+}
