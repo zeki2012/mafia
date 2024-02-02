@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mafya</title>
+    <title>Təqribi rəqem seçimi</title>
 </head>
 <body>
-    <h1>Mafya</h1>
-    
-    <label for="num">1 ile 3 arasina bir reqem secin ve kartinizi öyrənmək üçün kart düymesine basın</label>
-    <input type="number" max="3" min="1" id="num">
-    <button onclick="zeki()">Bas</button>
+    <h2> Teqribi reqem sec</h2>
+    <p>Komputer kimdir? (mafia, komisar, vetendas)</p>
 
-    <h1 id="mafya"></h1>
+    <input type="text" id="guess" >
+    <button onclick="guessNumber()" >Reqemi tapin</button>
+    <h2 id="netice"></h2>
 
-    <script src="script.js"></script>
+     <script src="script.js"></script>
+
 </body>
 </html>
